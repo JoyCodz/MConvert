@@ -1,12 +1,19 @@
 import { useState } from "react";
 import "./App.css";
 
+type Result = {
+  obtainedMarks: number;
+  totalMarks: number;
+  percentage: number;
+};
+
 const App = () => {
-  const [oddSubs, setOddSubs] = useState(0);
-  const [oddSgpa, setOddSgpa] = useState(0);
-  const [evenSubs, setEvenSubs] = useState(0);
-  const [evenSgpa, setEvenSgpa] = useState(0);
-  const [result, setResult] = useState(null);
+  const [oddSubs, setOddSubs] = useState<number>(0);
+  const [oddSgpa, setOddSgpa] = useState<number>(0);
+  const [evenSubs, setEvenSubs] = useState<number>(0);
+  const [evenSgpa, setEvenSgpa] = useState<number>(0);
+
+  const [result, setResult] = useState<Result | null>(null);
 
   const calculateMarks = () => {
     if (oddSgpa === 0 || oddSubs === 0 || evenSgpa === 0 || evenSubs === 0) {
