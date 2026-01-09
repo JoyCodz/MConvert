@@ -16,7 +16,16 @@ const App = () => {
   const [result, setResult] = useState<Result | null>(null);
 
   const calculateMarks = () => {
-    if (oddSgpa === 0 || oddSubs === 0 || evenSgpa === 0 || evenSubs === 0) {
+    if (
+      !oddSgpa ||
+      !evenSgpa ||
+      !oddSubs ||
+      !evenSubs ||
+      isNaN(oddSgpa) ||
+      isNaN(evenSgpa) ||
+      isNaN(oddSubs) ||
+      isNaN(evenSubs)
+    ) {
       alert("Please enter the values correctly!");
     } else {
       const totalSubs = oddSubs + evenSubs;
