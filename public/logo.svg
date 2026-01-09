@@ -1,0 +1,54 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="512"
+  height="512"
+  viewBox="0 0 512 512"
+>
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="240" fill="#0EA5E9"/>
+
+  <!-- Inner Soft Gradient -->
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="210" fill="url(#grad)"/>
+
+  <!-- Abstract M Shape -->
+  <path
+    d="M160 300 L160 200 L220 260 L256 220 L292 260 L352 200 L352 300"
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="18"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Rising Bar (Conversion Concept) -->
+  <rect x="190" y="320" width="24" height="40" rx="6" fill="#22C55E"/>
+  <rect x="230" y="300" width="24" height="60" rx="6" fill="#4ADE80"/>
+  <rect x="270" y="270" width="24" height="90" rx="6" fill="#86EFAC"/>
+
+  <!-- Arrow -->
+  <path
+    d="M185 265 Q256 220 327 200"
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
+  <polygon points="320,190 340,200 320,210" fill="#FFFFFF"/>
+
+  <!-- Percent Symbol -->
+  <text
+    x="256"
+    y="170"
+    text-anchor="middle"
+    font-size="52"
+    font-weight="700"
+    fill="#FFFFFF"
+    font-family="Inter, system-ui, sans-serif"
+  >%</text>
+</svg>
