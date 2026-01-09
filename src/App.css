@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* main{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+
+:root {
+  @apply bg-neutral-900 text-white m-0;
+}
+main {
+  @apply mx-auto md:my-20 my-10  sm:mx-auto sm:my-0;
+}
+
+input {
+  @apply border-b-2 px-2 py-1.5 rounded-xl sm:w-[20%] md:w-[70%] my-2 focus:outline-0 font-bold;
+}
+.inputSection {
+  @apply grid md:grid-cols-2 sm:grid-cols-1 border-2 rounded-2xl gap-y-1 md:mx-auto py-10  px-4 justify-center-safe;
+}
